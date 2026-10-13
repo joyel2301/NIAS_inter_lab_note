@@ -16,6 +16,8 @@ configuration:
     - "**/*.pdf"
     - "**/*.base"
     - CLAUDE.md
+    - "**/image-1790054954031.jpg"
+    - "**/image-1790054959695.jpg"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
