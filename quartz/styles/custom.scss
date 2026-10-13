@@ -1,3 +1,58 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// 젤 사진 모아보기 (scripts/gel-gallery.mjs)
+.gel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0 2rem;
+}
+.gel-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+  .external-icon { display: none; }
+  .gel-pic {
+    display: block;
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #000;
+    &:hover { border-color: var(--secondary); }
+  }
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 0;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    b { font-weight: 600; color: var(--dark); }
+  }
+  .gel-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    color: var(--darkgray);
+    a { color: var(--secondary); background: none; }
+  }
+  .gel-dl {
+    flex: none;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    &:hover { background: var(--highlight); }
+  }
+}
