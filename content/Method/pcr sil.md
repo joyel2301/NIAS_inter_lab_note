@@ -1,0 +1,9 @@
+#### stage1 x1
+	step1: 98.0도 5:00
+#### stage2 x40
+	step1: 98.0도 0:05
+	step2: 58.0도 0:05
+	step3: 72.0도 1:00
+#### stage3 x1
+	step1: 72.0도 1:00
+	step2: 12.0도 unlimited
