@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: ko-KR
-  baseUrl: lab-notes.pages.dev
+  baseUrl: nias-inter-lab-note.joyel2301.workers.dev
   ignorePatterns:
     - private
     - templates
